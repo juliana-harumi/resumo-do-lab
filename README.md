@@ -67,3 +67,26 @@ Cada uma dessas estruturas impacta o resultado do SLA. Para saber exatamente qua
 
 Uma outra estratégia de replicação é encontrada nas **Contas de Armazenamento**, na opção **"Redundância"**. Isso também influencia nas regras do SLA. Ou seja, quanto mais replicações eu tiver, mais "9s" consigo garantir, e assim, o meu tempo de inatividade será menor.
 
+# Tipos de Serviços de Nuvem no Azure
+
+- **IaaS (Infraestrutura como Serviço)**: Permite a criação de uma infraestrutura de TI com pagamento conforme o uso, alugando servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais de um provedor de nuvem.
+- **PaaS (Plataforma como Serviço)**: Fornece um ambiente para a criação, o teste e a implantação de aplicativos de software, sem a necessidade de gerenciar a infraestrutura subjacente.
+- **SaaS (Software como Serviço)**: Os usuários se conectam e utilizam aplicativos baseados na nuvem pela Internet, como Microsoft Office 365, e-mail e calendários.
+
+## Modelo de Responsabilidade Compartilhada
+
+- **IaaS**: O serviço de nuvem mais flexível. Você configura e gerencia o hardware para seu aplicativo.
+- **PaaS**: Focado no desenvolvimento de aplicativos. O gerenciamento da plataforma é realizado pelo provedor de nuvem.
+- **SaaS**: Modelo de pagamento conforme o uso. Os usuários pagam pelo software que utilizam em um modelo de assinatura.
+
+## Tipos de Serviço de Nuvem - Laboratório
+
+Dentro do console do Azure, ao clicar em **Criar Máquinas Virtuais**, é possível visualizar uma ampla gama de configurações. Agora, vamos focar na arquitetura e no sistema operacional.
+
+- Na opção **Imagem**, você pode escolher entre várias opções de sistemas operacionais. Ao selecionar o sistema operacional, a opção **Tamanho** já exibe o valor em Reais por mês. Vale lembrar que tudo o que você criar é de sua responsabilidade.
+- Na próxima página, é possível adicionar discos, configurar a rede, gerenciar e monitorar, entre outras opções.
+- Ainda no console, ao clicar em **Criar Bancos de Dados SQL**, existe a opção de criar um servidor. Você deve clicar em **Criar um novo**, onde será necessário definir um nome, localização, método de autenticação e selecionar um administrador. É importante lembrar que você não terá acesso a esse servidor, ele é apenas para o banco de dados.
+- Além disso, durante a criação do banco de dados, você poderá selecionar a **Redundância do Armazenamento de Backup** (lembre-se do SLA). No final, será exibido o custo mensal do banco de dados.
+
+
+
