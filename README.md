@@ -88,5 +88,38 @@ Dentro do console do Azure, ao clicar em **Criar Máquinas Virtuais**, é possí
 - Ainda no console, ao clicar em **Criar Bancos de Dados SQL**, existe a opção de criar um servidor. Você deve clicar em **Criar um novo**, onde será necessário definir um nome, localização, método de autenticação e selecionar um administrador. É importante lembrar que você não terá acesso a esse servidor, ele é apenas para o banco de dados.
 - Além disso, durante a criação do banco de dados, você poderá selecionar a **Redundância do Armazenamento de Backup** (lembre-se do SLA). No final, será exibido o custo mensal do banco de dados.
 
+# Componentes da Arquitetura do Azure
+
+## Regiões
+O Azure possui a maior quantidade de regiões globais entre os provedores de nuvem, com mais de 60 regiões em mais de 140 países. Cada região é composta por um ou mais datacenters localizados próximos, permitindo maior flexibilidade, escalabilidade e menor latência para os usuários. Além disso, as regiões garantem conformidade com a legislação local de dados e preservam a residência dessas informações. 
+
+[Mais informações](https://azure.microsoft.com/pt-br/explore/global-infrastructure/geographies#:~:text=O%20Azure%20est%C3%A1%20dispon%C3%ADvel%20ou,%2C%20Alemanha%2C%20Gr%C3%A9cia%2C%20It%C3%A1lia%2C)
+
+## Zonas de Disponibilidade
+As zonas de disponibilidade protegem contra interrupções ao isolar fisicamente datacenters dentro da mesma região. Cada datacenter possui sua própria alimentação, sistema de resfriamento e rede. Esses datacenters são interligados por redes de fibra óptica privadas para garantir continuidade e alta disponibilidade.
+
+## Pares de Regiões
+As regiões em pares são separadas por, no mínimo, 300 milhas, garantindo maior resiliência. Certos serviços do Azure replicam automaticamente os dados entre essas regiões. Em caso de falhas, uma região será priorizada para recuperação. Além disso, as atualizações de sistema são distribuídas em momentos diferentes para reduzir o impacto no serviço.
+
+## Regiões Soberanas
+- **Serviços Governamentais dos EUA**: Atendem às necessidades de segurança e conformidade de entidades federais, estaduais e municipais dos EUA.
+- **Azure China**: A Microsoft é o primeiro provedor de serviços de nuvem pública internacional na China, conforme as leis e regulamentações do governo chinês.
+
+## Recursos do Azure
+No Azure, você pode utilizar diversos recursos como armazenamento, redes e máquinas virtuais para construir suas soluções de nuvem.
+
+## Grupos de Recursos
+Os grupos de recursos são contêineres que permitem gerenciar e organizar diferentes recursos em um único local. Esses recursos podem estar localizados em diferentes regiões e ser movidos entre grupos conforme necessário. Além disso, é possível utilizar vários grupos de recursos para um único aplicativo.
+
+## Assinaturas do Azure
+Cada assinatura no Azure fornece acesso seguro e autorizado aos serviços. Ela também oferece controle sobre o faturamento, gerando relatórios individuais para cada assinatura, e possibilita a definição de permissões para o acesso aos recursos.
+
+## Grupos de Gerenciamento
+Grupos de gerenciamento facilitam a organização de várias assinaturas do Azure. Todas as assinaturas associadas a um grupo herdam automaticamente as regras de gerenciamento aplicadas a ele.
+
+## Componentes da Arquitetura do Azure - Laboratório
+Ao criar um **Grupo de Recursos** no Azure, a sua assinatura padrão será selecionada automaticamente. Caso tenha mais de uma, basta escolher a alternativa adequada. A criação de um grupo de recursos é obrigatória e você deve nomeá-lo e escolher a região onde será implementado. As marcações (tags) permitem identificar e classificar os recursos. Após a criação do grupo, é possível verificar logs de auditoria, permissões e eventos de automação. O primeiro recurso que você deve criar dentro do grupo é uma **VNET** (rede virtual), que permite criar uma rede isolada na nuvem.
+
+
 
 
