@@ -120,6 +120,61 @@ Grupos de gerenciamento facilitam a organização de várias assinaturas do Azur
 ## Componentes da Arquitetura do Azure - Laboratório
 Ao criar um **Grupo de Recursos** no Azure, a sua assinatura padrão será selecionada automaticamente. Caso tenha mais de uma, basta escolher a alternativa adequada. A criação de um grupo de recursos é obrigatória e você deve nomeá-lo e escolher a região onde será implementado. As marcações (tags) permitem identificar e classificar os recursos. Após a criação do grupo, é possível verificar logs de auditoria, permissões e eventos de automação. O primeiro recurso que você deve criar dentro do grupo é uma **VNET** (rede virtual), que permite criar uma rede isolada na nuvem.
 
+# Computação e Rede
+
+## Serviços de Computação no Azure
+O Azure disponibiliza serviços de computação sob demanda, fornecendo recursos como armazenamento, processadores, memória, rede e sistemas operacionais.
+
+### Máquinas Virtuais no Azure
+As VMs (máquinas virtuais) do Azure simulam computadores físicos por meio de software, incluindo processador virtual, memória, rede e armazenamento. Esse serviço de IaaS oferece grande flexibilidade e controle total aos usuários.
+
+#### Conjuntos de Dimensionamento de VMs
+Os conjuntos de dimensionamento permitem ajustar automaticamente a capacidade de computação, garantindo balanceamento de carga conforme necessário.
+
+### Área de Trabalho Virtual do Azure
+A Área de Trabalho Virtual do Azure oferece virtualização de áreas de trabalho e aplicativos na nuvem, eliminando a necessidade de servidores adicionais de gateway e reduzindo o risco de obsolescência. Ele suporta sessões múltiplas em uma única implantação.
+
+## Serviços de Contêineres do Azure
+Os contêineres fornecem um ambiente virtualizado mais leve, sem a necessidade de gerenciamento completo do sistema operacional, respondendo às demandas dinâmicas de forma ágil.
+
+- **Instâncias de Contêiner do Azure**: PaaS que roda um ou mais contêineres.
+- **Aplicativos de Contêiner do Azure**: PaaS para balanceamento e escalonamento de cargas.
+- **Serviço de Kubernetes do Azure**: Orquestração de contêineres para arquiteturas distribuídas.
+
+### Azure Functions
+Um serviço PaaS que suporta computação serverless, permitindo a execução de código sob demanda, sem a necessidade de manter infraestrutura ativa.
+
+## Comparação das Opções de Computação do Azure
+
+### Máquinas Virtuais
+Servidores baseados na nuvem que suportam sistemas operacionais Windows e Linux. Indicados para migrações do tipo lift-and-shift e fornecem o pacote completo do sistema operacional.
+
+### Área de Trabalho Virtual
+Oferece uma experiência de desktop baseada em nuvem, acessível por aplicativos ou navegadores modernos, com suporte a múltiplos logins de usuários simultâneos.
+
+### Contêineres
+Uma solução leve e modular, ideal para microsserviços, com alta escalabilidade e resiliência, funcionando em cima do sistema operacional do host.
+
+## Serviços de Aplicativos do Azure
+O Azure App Services é uma plataforma gerenciada para desenvolvimento, implantação e escalabilidade de aplicativos web e APIs, compatível com linguagens como .NET, Node.js, Java, Python, entre outras. Ele oferece PaaS com alto desempenho, segurança e conformidade.
+
+## Rede Virtual no Azure (VNet)
+A VNet do Azure permite que os recursos se comuniquem entre si, com a Internet e com redes locais.
+
+- **Pontos de Extremidade Públicos**: Acessíveis via Internet.
+- **Pontos de Extremidade Privados**: Restritos a redes internas.
+- **Sub-redes**: Segmentam a rede conforme necessário.
+- **Emparelhamento de Rede**: Conecta redes privadas diretamente.
+- **Gateway de VPN**: Transfere dados criptografados entre redes locais e virtuais do Azure via Internet.
+- **ExpressRoute**: Conexão privada para estender redes locais ao Azure.
+
+## DNS do Azure
+Oferece alta confiabilidade e desempenho por meio de servidores DNS globais usando Anycast. O DNS do Azure facilita a gestão de domínios externos e do Azure em um único serviço, com controle de acesso baseado em funções, monitoramento e registros detalhados.
+
+- **Nomes de Domínio Personalizados**: Possibilidade de criar domínios privados em redes virtuais.
+- **Registros de Alias**: Apontam diretamente para recursos do Azure.
+
+
 
 
 
