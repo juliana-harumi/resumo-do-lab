@@ -289,5 +289,49 @@ O **Microsoft Defender para Nuvem** é um serviço de monitoramento que protege 
 - Análise de ataques potenciais.
 - Controle de acesso just-in-time para portas.
 
+# Gerenciamento e Governança
+
+## Fatores que Afetam os Custos
+
+1. **Tipo de Recurso**: Os custos variam conforme o tipo de recurso, com base no uso monitorado por medidores. O número de medidores associados depende do tipo de recurso.
+2. **Consumo**: Em um modelo de pagamento por uso, o consumo é o principal fator que gera custos.
+3. **Manutenção**: Monitorar o ambiente Azure pode ajudar a identificar e reduzir custos desnecessários, como desligar máquinas virtuais subutilizadas.
+4. **Área Geográfica**: O mesmo tipo de recurso pode ter preços diferentes dependendo da localização, impactando os custos do Azure.
+5. **Tráfego de Rede**: Transferências de dados de entrada são geralmente gratuitas, mas o custo de dados de saída e entre recursos do Azure pode ser influenciado por zonas de cobrança.
+6. **Assinatura**: O tipo de assinatura e sua configuração afetam o custo. Assinaturas gratuitas, por exemplo, permitem explorar recursos do Azure sem custo.
+
+## Azure Marketplace
+O **Azure Marketplace** é uma plataforma onde os clientes podem encontrar, testar, comprar e provisionar aplicativos e serviços de centenas de provedores, todos certificados para rodar no Azure. O Marketplace oferece:
+- Plataformas de contêiner de software livre.
+- Imagens de máquinas virtuais e bancos de dados.
+- Software para compilação e implantação de aplicativos.
+- Ferramentas para desenvolvedores.
+- E muito mais, com mais de 10.000 itens disponíveis.
+
+## Calculadora de Preços
+A **Calculadora de Preços** do Azure é uma ferramenta que ajuda a estimar os custos dos produtos Azure. As opções de configuração variam entre produtos, mas incluem:
+- Região.
+- Camada.
+- Opções de cobrança.
+- Opções de suporte.
+- Programas e ofertas.
+- Preços para desenvolvimento e teste.
+
+## Calculadora de Custo Total de Propriedade (TCO)
+A **Calculadora TCO** ajuda a estimar a economia ao migrar para o Azure, comparando os custos de infraestrutura local com os custos de uso de produtos e serviços na nuvem Azure.
+
+## Gerenciamento de Custos do Azure
+O **Gerenciamento de Custos** oferece várias funcionalidades:
+- **Relatórios**: Relatórios detalhados de cobrança.
+- **Enriquecimento de Dados**: Aumenta o detalhamento das informações financeiras.
+- **Orçamentos**: Permite a definição de limites de gastos.
+- **Alertas**: Notificações quando os gastos excedem o orçamento.
+- **Recomendações**: Sugestões de otimização de custos.
+
+## Marcas (Tags)
+As **Tags** são metadados que podem ser atribuídos a recursos no Azure. Elas:
+- Organizam recursos de forma lógica em uma taxonomia.
+- Consistem em pares nome-valor.
+- São úteis para fins de relatórios e organização, especialmente para análise de custos.
 
 
