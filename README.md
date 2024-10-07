@@ -239,6 +239,55 @@ Interface gráfica compatível com Windows, MacOS e Linux, semelhante ao Windows
 ## Sincronização de Arquivos no Azure
 Oferece sincronização bidirecional entre os arquivos armazenados localmente e no Azure, mantendo os arquivos mais acessados localmente e otimizando o espaço em disco com a camada de nuvem.
 
+# Identidade, Acesso e Segurança
+
+## Microsoft Entra ID
+O **Microsoft Entra ID** é o serviço de gerenciamento de identidade e acesso baseado em nuvem no Microsoft Azure. Localmente (on-premises), ele continua conhecido como **Active Directory**.
+
+### Principais Funcionalidades:
+- **Autenticação**: Permite que funcionários acessem os recursos com suas credenciais.
+- **Logon Único (SSO)**: Um único login concede acesso a vários aplicativos.
+- **Gerenciamento de Aplicativos**: Controla o acesso a aplicativos corporativos.
+- **Negócios para Negócios (B2B)**: Facilita o gerenciamento de identidade para parceiros externos.
+- **Gerenciamento de Dispositivos**: Integra dispositivos de forma segura ao ambiente corporativo.
+
+## Microsoft Entra Domain Services
+Com o **Microsoft Entra Domain Services**, você obtém os benefícios dos serviços de domínio baseados em nuvem sem a necessidade de gerenciar controladores de domínio. Ele permite a execução de aplicativos legados que não suportam padrões de autenticação modernos e sincroniza automaticamente com o Microsoft Entra ID.
+
+## Comparação entre Autenticação e Autorização
+
+| **Autenticação**                                      | **Autorização**                                    |
+|-------------------------------------------------------|----------------------------------------------------|
+| Identifica a pessoa ou serviço que está acessando um recurso. | Define o nível de acesso que a pessoa ou serviço autenticado tem. |
+| Solicita credenciais de acesso válidas.               | Determina quais dados e operações estão autorizados. |
+| Base para criar controles de identidade e acesso seguros. | Define o que pode ser feito com os dados acessados. |
+
+## Autenticação Multifator (MFA)
+A **autenticação multifator** adiciona uma camada extra de segurança ao exigir dois ou mais fatores para autenticação:
+- **Algo que você sabe** (ex.: senha)
+- **Algo que você possui** (ex.: celular)
+- **Algo que você é** (ex.: impressão digital)
+
+## Acesso Condicional
+O **Acesso Condicional** aplica regras para garantir segurança com base em:
+- Associação de usuário ou grupo.
+- Localização por endereço IP.
+- Dispositivo usado.
+- Aplicativo acessado.
+- Detecção de risco.
+
+## Controle de Acesso Baseado em Função (RBAC)
+O **RBAC** permite um gerenciamento de acesso granular, atribuindo permissões específicas para funções. Isso garante que cada usuário tenha apenas o acesso necessário para realizar seu trabalho. Ele também habilita o controle de acesso ao portal do Azure e aos recursos.
+
+## Proteção em Camadas
+A **proteção em camadas** fornece uma abordagem defensiva em múltiplos níveis, garantindo que ataques a uma camada sejam isolados das demais, aumentando a resiliência do sistema.
+
+## Microsoft Defender para Nuvem
+O **Microsoft Defender para Nuvem** é um serviço de monitoramento que protege ambientes de datacenters locais e do Azure. Ele oferece:
+- Recomendações de segurança.
+- Detecção e bloqueio de malware.
+- Análise de ataques potenciais.
+- Controle de acesso just-in-time para portas.
 
 
 
