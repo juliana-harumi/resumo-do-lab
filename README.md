@@ -174,6 +174,70 @@ Oferece alta confiabilidade e desempenho por meio de servidores DNS globais usan
 - **Nomes de Domínio Personalizados**: Possibilidade de criar domínios privados em redes virtuais.
 - **Registros de Alias**: Apontam diretamente para recursos do Azure.
 
+# Armazenamento no Azure
+
+## Contas de Armazenamento
+Cada conta de armazenamento precisa de um nome exclusivo em nível global. Ela fornece acesso à Internet mundialmente e determina os serviços de armazenamento e opções de redundância.
+
+## Redundância de Armazenamento
+
+| Tipo de Redundância | Descrição | Durabilidade |
+|---------------------|-----------|--------------|
+| **LRS** (Local Redundant Storage) | Armazenamento com redundância em um único datacenter na região primária. | 11 noves |
+| **ZRS** (Zone Redundant Storage) | Armazena dados em três zonas de disponibilidade dentro da região primária. | 12 noves |
+| **GRS** (Geo-Redundant Storage) | Armazena os dados em um datacenter na região primária e outro na secundária. | 16 noves |
+| **GZRS** (Geo-Zone Redundant Storage) | Armazena os dados em três zonas de disponibilidade na região primária e em um datacenter na região secundária. | 16 noves |
+
+- **LRS**: Recomendado para ambientes não produtivos.
+- **ZRS**: Recomendado para ambientes produtivos.
+
+## Tipos de Armazenamento
+
+### Blob do Azure
+Ideal para o armazenamento de grandes volumes de dados não estruturados, como textos ou arquivos binários.
+
+### Disco do Azure
+Oferece discos persistentes para máquinas virtuais, aplicativos e outros serviços que necessitam de armazenamento.
+
+### Fila do Azure
+Serviço de armazenamento e recuperação de mensagens com capacidade de até 64 KB, adequado para grandes volumes de mensagens.
+
+### Arquivos do Azure
+Cria um compartilhamento de arquivos de rede altamente disponível, acessível via protocolo SMB (Bloco de Mensagens do Servidor).
+
+### Tabelas do Azure
+Fornece uma solução para o armazenamento de dados estruturados não relacionais com chave/atributo, utilizando um design sem esquema.
+
+## Pontos de Extremidade Públicos para Serviços de Armazenamento
+
+| Serviço de Armazenamento | Ponto de Extremidade |
+|--------------------------|----------------------|
+| **Armazenamento de Blobs** | `https://<nome-da-conta>.blob.core.windows.net` |
+| **Data Lake Storage Gen2** | `https://<nome-da-conta>.dfs.core.windows.net` |
+| **Arquivos do Azure** | `https://<nome-da-conta>.file.core.windows.net` |
+| **Armazenamento de Filas** | `https://<nome-da-conta>.queue.core.windows.net` |
+| **Armazenamento de Tabelas** | `https://<nome-da-conta>.table.core.windows.net` |
+
+## Camadas de Acesso no Armazenamento do Azure
+
+- **Frequente**: Otimizado para dados acessados com frequência.
+- **Esporádico**: Para dados acessados com pouca frequência e armazenados por pelo menos 30 dias.
+- **Frio**: Para dados acessados raramente e armazenados por no mínimo 90 dias.
+- **Arquivo Morto**: Para dados raramente acessados e armazenados por pelo menos 180 dias, com latência flexível.
+
+## Migração para o Azure
+
+### Azure Data Box
+Uma solução de armazenamento capaz de suportar até 80 terabytes de dados, ideal para migração de backups de recuperação de desastres para o Azure. Oferece transporte seguro de dados e pode ser usada em locais com conectividade limitada.
+
+### AzCopy
+Ferramenta de linha de comando que facilita a cópia de blobs ou arquivos de e para o Azure Storage, permitindo sincronização unidirecional.
+
+## Gerenciamento de Armazenamento no Azure
+Interface gráfica compatível com Windows, MacOS e Linux, semelhante ao Windows Explorer, que facilita a gestão dos recursos de armazenamento.
+
+## Sincronização de Arquivos no Azure
+Oferece sincronização bidirecional entre os arquivos armazenados localmente e no Azure, mantendo os arquivos mais acessados localmente e otimizando o espaço em disco com a camada de nuvem.
 
 
 
