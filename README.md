@@ -334,4 +334,24 @@ As **Tags** são metadados que podem ser atribuídos a recursos no Azure. Elas:
 - Consistem em pares nome-valor.
 - São úteis para fins de relatórios e organização, especialmente para análise de custos.
 
+# Governança e Conformidade no Azure
+
+## Azure Policy
+
+O **Azure Policy** é uma ferramenta fundamental para aplicar padrões organizacionais e garantir a conformidade em grande escala. Ele promove uma governança eficaz, garantindo consistência em questões regulatórias, de segurança, custo e gerenciamento. A ferramenta oferece uma avaliação contínua dos recursos do Azure para identificar aqueles que não estão em conformidade com as políticas definidas. Além disso, conta com políticas e iniciativas pré-definidas, categorizadas em áreas como armazenamento, rede, computação, segurança e monitoramento.
+
+## Bloqueios de Recursos
+
+Os **bloqueios de recursos** no Azure oferecem uma camada adicional de proteção, impedindo a exclusão ou modificação acidental de recursos importantes. Eles podem ser aplicados em diferentes níveis, como assinaturas, grupos de recursos ou até em recursos individuais. Esses bloqueios garantem maior controle e segurança em ambientes críticos.
+
+### Tipos de Bloqueios
+
+| Tipo de Bloqueio | Ler | Atualizar | Excluir |
+| ---------------- | --- | --------- | ------- |
+| **Excluir** | Sim | Sim | Não |
+| **Somente Leitura (ReadOnly)** | Sim | Não | Não |
+
+## Microsoft Purview
+
+O **Microsoft Purview** é uma solução abrangente que integra governança, risco e conformidade de dados, oferecendo uma visão unificada dos dados em diferentes ambientes, incluindo locais, multinuvem e SaaS. Ele facilita a **descoberta automatizada de dados**, a **classificação de dados confidenciais** e oferece **linhagem de dados de ponta a ponta**, ajudando as organizações a manter o controle sobre a conformidade de seus dados de forma mais eficiente.
 
