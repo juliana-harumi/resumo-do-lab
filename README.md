@@ -355,3 +355,38 @@ Os **bloqueios de recursos** no Azure oferecem uma camada adicional de proteçã
 
 O **Microsoft Purview** é uma solução abrangente que integra governança, risco e conformidade de dados, oferecendo uma visão unificada dos dados em diferentes ambientes, incluindo locais, multinuvem e SaaS. Ele facilita a **descoberta automatizada de dados**, a **classificação de dados confidenciais** e oferece **linhagem de dados de ponta a ponta**, ajudando as organizações a manter o controle sobre a conformidade de seus dados de forma mais eficiente.
 
+# Ferramentas de Gerenciamento e Implantação no Azure
+
+## Ferramentas para Interagir com o Azure
+
+O Azure oferece uma variedade de ferramentas para facilitar a interação e o gerenciamento de seus recursos:
+
+- **Portal do Azure**: Interface gráfica para gerenciamento e monitoramento de recursos.
+- **Azure PowerShell**: Conjunto de cmdlets que permite automatizar tarefas diretamente pelo terminal.
+- **Azure Cloud Shell**: Shell interativo acessível diretamente pelo navegador, com suporte para Bash e PowerShell.
+- **Interface de Linha de Comando (CLI)**: Ferramenta de linha de comando multiplataforma para gerenciar os serviços Azure.
+
+## Azure Arc
+
+O **Azure Arc** permite a gestão centralizada de recursos de TI, como servidores e clusters Kubernetes, seja em ambientes locais ou em outras nuvens, utilizando o Azure como plataforma de governança. Ele facilita o controle, a segurança e a conformidade, independentemente de onde os recursos estejam localizados.
+
+## Azure Resource Manager (ARM)
+
+O **Azure Resource Manager (ARM)** é uma camada de gerenciamento que possibilita criar, atualizar e excluir recursos dentro da sua assinatura do Azure. Ele oferece uma maneira eficiente de organizar e gerenciar os serviços de forma centralizada.
+
+### Infraestrutura como Código
+
+A abordagem de **Infraestrutura como Código** (IaC) ajuda a manter consistência nas implantações, além de facilitar o gerenciamento de configurações em larga escala. Usando IaC, você pode provisionar novos ambientes rapidamente, utilizando uma configuração padrão, o que garante replicabilidade e agilidade.
+
+## Modelos do Azure Resource Manager (ARM)
+
+Os **modelos do ARM** são arquivos no formato JSON que definem a infraestrutura a ser implantada no Azure. Com uma abordagem declarativa, você pode automatizar a criação de recursos sem a necessidade de escrever comandos manuais. 
+
+Principais características dos modelos ARM:
+
+- **Sintaxe declarativa**: Define os recursos a serem implantados.
+- **Resultados repetíveis**: Garante que as mesmas configurações sejam aplicadas em várias implantações.
+- **Orquestração**: Coordena a ordem de criação dos recursos.
+- **Arquivos modulares**: Suporte a modularidade para gerenciar infraestruturas complexas.
+- **Validação integrada**: Permite verificar se o modelo está correto antes de ser implantado.
+- **Código exportável**: Capacidade de exportar a configuração para reutilização futura.
