@@ -390,3 +390,27 @@ Principais características dos modelos ARM:
 - **Arquivos modulares**: Suporte a modularidade para gerenciar infraestruturas complexas.
 - **Validação integrada**: Permite verificar se o modelo está correto antes de ser implantado.
 - **Código exportável**: Capacidade de exportar a configuração para reutilização futura.
+
+# Ferramentas de Monitoramento do Azure
+
+## Assistente do Azure
+
+O **Assistente do Azure** é uma ferramenta que analisa os recursos implantados e fornece recomendações com base nas melhores práticas para otimizar suas implantações no Azure. Ele oferece sugestões em várias categorias:
+
+- **Confiabilidade**: Garantir que seus recursos estejam altamente disponíveis.
+- **Segurança**: Recomendações para melhorar a segurança dos seus ativos.
+- **Desempenho**: Otimizações para manter a performance ideal de seus aplicativos.
+- **Custo**: Dicas para gerenciar e reduzir seus gastos.
+- **Excelência Operacional**: Melhoria nas operações e gestão de recursos.
+
+## Integridade do Serviço do Azure
+
+A **Integridade do Serviço do Azure** é um conjunto de serviços que mantém você informado sobre o estado geral do Azure, identificando possíveis problemas que podem impactar seus recursos ou serviços.
+
+- **Status do Azure**: Visão geral da integridade de todos os serviços em todas as regiões do Azure.
+- **Integridade do Serviço**: Exibição focada apenas nos serviços e regiões que você está utilizando. Problemas em regiões ou serviços que você não utiliza não são mostrados.
+- **Resource Health**: Visão personalizada da integridade dos seus recursos específicos no Azure, fornecendo informações detalhadas sobre o status de cada um.
+
+## Azure Monitor
+
+O **Azure Monitor** é uma ferramenta que maximiza a disponibilidade e o desempenho de seus aplicativos e serviços ao coletar, analisar e agir com base em dados de telemetria. Ele monitora tanto ambientes na nuvem quanto ambientes locais, fornecendo insights cruciais para manter o funcionamento ideal dos seus sistemas.
